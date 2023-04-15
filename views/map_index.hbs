@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Places Search Box</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+    {{!-- <link rel="stylesheet" type="text/css" href="./ge.css" /> --}}
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <div id="map"></div>
+    <div id="main-grid">
+      <div class="dates">     
+        <input type="date" id="startdate" class="mydate">
+        <input type="date" id="enddate" class="mydate">
+      </div>
+      <div>
+        <label class=input-text for="text1">Enter your prefered Hotel</label>
+        <input type="text" id="text1">
+      </div>
+      <div>
+        <label class=input-text for="text2">Enter your prefered Restaurant</label>
+        <input type="text" id="text2">
+      </div>
+      <div>
+        <label class=input-text for="text3">Enter your prefered View spot</label>
+        <input type="text" id="text3">
+      </div>
+      <div>
+        <label class=input-text for="text4">Enter your prefered Shopping Area</label>
+        <input type="text" id="text4">
+      </div>
+      <div>
+        <label class=input-text for="text5">Enter your prefered Recreational spot</label>
+        <input type="text" id="text5">
+      </div>
+    </div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4PvYsu_DcdrPgk3OPzFB2oiR5p7DTF8&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>

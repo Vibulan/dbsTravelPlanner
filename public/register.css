@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(45deg,  #d8d8d8, #F2F3F2, white);
+}
+
+header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.font-text {
+    font-family: "Cedarville Cursive", sans-serif;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.nav_links {
+    display: flex;
+}
+
+.nav_links a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+
+    padding: 20px;
+
+    transition: all 0.3s ease 0s;
+    color: #626262;
+    font-family: 400;
+
+}
+.nav_links a:hover {
+    color: #EE1C47;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.plane {
+    border-radius: 6px 6px 6px 6px;
+}

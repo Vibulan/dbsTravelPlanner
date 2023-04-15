@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.main-text {
+    min-height: 100vh;
+    margin-top: 60px;
+}
+
+.main-text1 {
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #E7F6F2;
+    padding-top: 250px;
+    padding-left: 200px;
+}
+
+.main-text2 {
+    max-width: 600px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #A5C9CA;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.main-text3 {
+    margin-top: 50px;
+}
+
+.main-text3 a {
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #395B64;
+    font-size: 24px;
+    color: #E7F6F2;
+    margin-top: 20px;
+    margin-left: 200px;
+    border-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.25s;
+}
+
+.main-text3 a:hover {
+    background-color: #A5C9CA;
+    color: #395B64;
+}
+
+.section1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section1-image {
+    width: 30vw;
+    height: 300px;
+}
+
+.section1-text {
+    color: #E7F6F2;
+    font-weight: 600;
+    font-size: 24px;
+    max-width: 300px;
+}
+
+.section1-text-main {
+    margin-bottom: 10px;
+    color: #A5C9CA;
+    font-weight: 600;
+    font-size: 32px;
+    max-width: 400px;
+}
+
+.section2-text {
+    margin-bottom: 50px;
+    margin-top: 300px;
+    color: #A5C9CA;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.features-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.features-grid-item {
+    background-color: #E7F6F211;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.features-img img{
+    height: auto;
+    width: 20vw;
+    
+}
+
+.features-main-text{
+    margin-top: 10px;
+    color: #A5C9CA;
+    font-size: 22px;
+}
+
+.features-sub-text{
+    color: #E7F6F2;
+    font-size: 18px;
+
+}
+
+@media (min-width: 600px) {
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid-item {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .features-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features-grid-item {
+        height: 400px;
+    }
+}
+
+.font-text {
+    font-family: "Cedarville Cursive", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-bottom: 10px;
+}
